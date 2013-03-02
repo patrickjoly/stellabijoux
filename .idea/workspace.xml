@@ -45,19 +45,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130302022901_add_category_id_to_product.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130302022901_add_category_id_to_product.rb">
+      <file leaf-file-name="20130302023229_fix_category_id_to_product.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130302023229_fix_category_id_to_product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="47" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+            <state line="2" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="0.055762082">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130302023229_fix_category_id_to_product.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130302023229_fix_category_id_to_product.rb">
+      <file leaf-file-name="20130302004840_create_category_product_association.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130302004840_create_category_product_association.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="48" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="46" selection-start="110" selection-end="110" vertical-scroll-proportion="0.1497006">
+            <state line="5" column="46" selection-start="110" selection-end="110" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/categories/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130302022901_add_category_id_to_product.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130302023229_fix_category_id_to_product.rb" />
         <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130302023229_fix_category_id_to_product.rb" />
       </list>
     </option>
   </component>
@@ -902,20 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130302022901_add_category_id_to_product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="47" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130302023229_fix_category_id_to_product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="48" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/fr.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -953,7 +939,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="110" selection-end="110" vertical-scroll-proportion="0.1497006">
+        <state line="5" column="46" selection-start="110" selection-end="110" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130302004840_create_category_product_association.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130302023229_fix_category_id_to_product.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="0.055762082">
           <folding />
         </state>
       </provider>
