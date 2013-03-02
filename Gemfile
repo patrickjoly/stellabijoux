@@ -19,6 +19,8 @@ gem 'kaminari'
 
 gem 'has_scope'
 
+gem 'rails-i18n'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
