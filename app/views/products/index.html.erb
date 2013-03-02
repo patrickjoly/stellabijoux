@@ -1,0 +1,44 @@
+<div id="produit-section-1">
+  <p id="produitDetails">
+  </p>
+
+
+  <h1 id="produitheader"><%= t 'product.title' %></h1>
+
+  <%= form_tag :products, :method => 'get', :onchange => "this.form.submit();" do %>
+      <br/>
+      <%= select_tag 'selected_category', options_from_collection_for_select(@categories, 'id', 'name', params[:selected_category]), :selected=> params[:selected_category], :include_blank => true, :onchange => "this.form.submit();" %>
+
+
+
+      <br/><br/>
+      <table>
+        <tr id="produitHeader">
+          <th><%= sortable "name", 'product.columnName' %>  </th>
+          <th><%= sortable "description", 'product.columnDescription' %></th>
+          <th><%= t 'product.columnImage' %></th>
+          <th><%= sortable "price", 'product.columnPrice' %></th>
+          <th><%= t 'product.columnCategory' %></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <% @products.each do |product| %>
+            <tr class="<%= cycle("productEven", "productOdd") %>">
+              <td><%= product.name %></td>
+              <td><%= product.description %></td>
+              <td><%= image_tag product.image_url.to_s, :size => "60x60" %></td>
+              <td><%= product.price %></td>
+              <td><%= product.category_name %></td>
+              <td><%= link_to (t 'product.display'), product %></td>
+
+            </tr>
+        <% end %>
+      </table>
+
+      <%= link_to 'New Product', new_product_path %>
+
+
+  <% end %>
+</div>
+

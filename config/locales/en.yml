@@ -1,0 +1,52 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  product:
+    title: 'Product list'
+    shorttitle: 'Products'
+    paragraphe1: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
+    paragraphe2: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
+
+    columnName: 'Name'
+    columnDescription: 'Description'
+    columnPrice: 'Price'
+    columnCategory: 'Category'
+    columnImage: 'Image'
+    display: 'Show'
+
+  category:
+    picklist_all: 'All categories'
+
+    time:
+    formats:
+      long: ''
+
+  site:
+    welcome: 'Welcome to our website'
+    paragraphe1: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
+    paragraphe2: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
+    compagny: 'Les orchidée Lussier'
+    slogan: 'A web site for anyone who is a real orchidee freak!'
+    contact: 'Contacts'
+    about: 'About us'
+    home: 'Home'
+    email: 'E-mail'
+    honeylink: 'Honey Link'
+
+  special:
+    linklabel: 'lien vers Wikipedia'
+    item1:
+      name: 'Phrag. Acker''s Superstar'
+      description: 'Acker''s Superstar est une croissement entre 2 Phrag hybrides que chaque collectionneur a entendu parler: Jason Fischer X Erix Young.  Wunakee Sunset est un rouge foncé vif avec une excellente forme. Ceux-ci devraient être d''une Superbe couleur. '
+      link: 'xxxxx'
+    item2:
+      name: 'Paphiopedilum Yi-Ying Golden Slipper'
+      description: 'Cette complexe Paph a de très grandes dorsales vertes qui au sommet tourne au blanc . Les pétales et la pochette sont dans les teintes de jaunes et de verts, certains ont des accents plus foncé.'
+      link: 'xxxxx'
+    item3:
+      name: 'Dendrobium atroviolaceum'
+      description: 'Cette espèce de Dendrobium provient de l''ile Russel.  Cette fleur d''apparence étrange est produite en abondance.  Les pétales sont Jaunes-vertes taché de mauve. Au centre on retrouve des rayure mauve'
+      link: 'xxxxx'
+
+

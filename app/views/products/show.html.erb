@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<div>
+
+<p>
+  <b>Nom:</b>
+  <%= @product.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @product.description %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= link_to image_tag @product.image_url, :size => "400x400"%>
+
+</p>
+
+
+
+<p>
+  <b>Prix:</b>
+  <%= @product.price %>
+</p>
+
+<%= link_to 'Retour', products_path %>
+</div>
