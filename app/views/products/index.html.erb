@@ -18,7 +18,7 @@
           <th><%= sortable "description", 'product.columnDescription' %></th>
           <th><%= t 'product.columnImage' %></th>
           <th><%= sortable "price", 'product.columnPrice' %></th>
-          <th><%= t 'product.columnCategory' %></th>
+
           <th></th>
           <th></th>
         </tr>
@@ -29,14 +29,14 @@
               <td><%= product.description %></td>
               <td><%= image_tag product.image_url.to_s, :size => "60x60" %></td>
               <td><%= product.price %></td>
-              <td><%= product.category_name %></td>
+
               <td><%= link_to (t 'product.display'), product %></td>
 
             </tr>
         <% end %>
       </table>
 
-      <%= link_to 'New Product', new_product_path %>
+
 
 
   <% end %>
