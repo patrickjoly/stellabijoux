@@ -26,6 +26,26 @@ body {
 
 }
 
+#mainblueborder {
+    position: relative;
+	top: 0px;
+    background-color:#00cccc;
+    height: 10px;
+    padding: 0px;
+    width: 100%;
+}
+
+#mainimage {
+    background: url("/assets/stella.jpg") repeat scroll 0 0 transparent;
+    height: 570px;
+    padding: 0px;
+    position: relative;
+    width: 1180px;
+}
+
+
+
+
 body,input {
 	font-family: "Jura", sans-serif;
 }
@@ -139,18 +159,18 @@ ul h4 {
 }
 
 #content {
-	width: 1110px;
-	padding: 35px;
-	background: #FFF;
+	width: 1180px;
+	padding: 15px;
+	background: #cccccc;
 	color: #333;
 }
 
 #content a {
-	color: #fb1b00;
+	color: #ffffff;
 }
 
 #content h2, #content h3, #content h4 {
-	color: #fb1b00;
+	color: #00cccc;
 }
 .blogpost h2 {
 	margin: 0 0 8px 0;
@@ -170,7 +190,7 @@ ul h4 {
 	position: relative;
 	padding: 35px;
 	height: 130px;
-	width: 1110px;
+	width: 1180px;
     background: url(/assets/headbg.jpg);
 }
 
