@@ -7,6 +7,8 @@ gem 'rails', '3.1.3'
 
 gem 'simple_form'
 
+gem 'fog'
+
 gem 'carrierwave'
 
 gem 'sass-rails',   '~> 3.1.5'

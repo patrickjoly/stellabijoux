@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20130302041548) do
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "categoryId"
     t.integer  "category_id"
   end
 
