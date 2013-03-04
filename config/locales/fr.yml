@@ -23,35 +23,18 @@ fr:
       long: ''
 
   site:
-      welcome: 'Bienvenue sur notre site web'
       paragraphe1: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
       paragraphe2: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
-      compagny: 'Les orchidée Lussier'
-      slogan: 'Un site pour les passionnés des orchidés du monde!'
+      compagny: 'StellaBijoux.com'
       contact: 'Coordonnées'
       about: 'À propos de nous'
       home: 'Accueil'
       email: 'Courriel'
-      honeylink: 'Miellerie'
-
-  special:
-    linklabel: 'lien vers Wikipedia'
-    item1:
-      name: 'Phrag. Acker''s Superstar'
-      description: 'Acker''s Superstar est une croissement entre 2 Phrag hybrides que chaque collectionneur a entendu parler: Jason Fischer X Erix Young.  Wunakee Sunset est un rouge foncé vif avec une excellente forme. Ceux-ci devraient être d''une Superbe couleur. '
-      link: 'xxxxx'
-    item2:
-      name: 'Paphiopedilum Yi-Ying Golden Slipper'
-      description: 'Cette complexe Paph a de très grandes dorsales vertes qui au sommet tourne au blanc . Les pétales et la pochette sont dans les teintes de jaunes et de verts, certains ont des accents plus foncé.'
-      link: 'xxxxx'
-    item3:
-      name: 'Dendrobium atroviolaceum'
-      description: 'Cette espèce de Dendrobium provient de l''ile Russel.  Cette fleur d''apparence étrange est produite en abondance.  Les pétales sont Jaunes-vertes taché de mauve. Au centre on retrouve des rayure mauve'
-      link: 'xxxxx'
+      back: 'retour'
 
 
   activerecord:
-    errors:
+      errors:
         template:
             body: There were problems with the following fields
             header:

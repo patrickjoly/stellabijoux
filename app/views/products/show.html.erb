@@ -1,18 +1,35 @@
 <p id="notice"><%= notice %></p>
 <div>
 
+
+
+<% if I18n.locale == I18n.default_locale %>
 <p>
-  <b>Nom:</b>
+  <b class="showproductLabel"><%= t('product.columnName') %>:</b>
   <%= @product.name %>
 </p>
 
 <p>
-  <b>Description:</b>
+  <b class="showproductLabel"><%= t('product.columnDescription') %>:</b>
   <%= @product.description %>
+</p>
+<% else %>
+ <p>
+  <b class="showproductLabel"><%= t('product.columnName') %>:</b>
+  <%= @product.name_e %>
 </p>
 
 <p>
-  <b>Image:</b>
+  <b class="showproductLabel"><%= t('product.columnDescription') %>:</b>
+  <%= @product.description_e %>
+</p>
+<% end %>
+
+
+
+
+<p>
+  <b class="showproductLabel"><%= t('product.columnImage') %>:</b>
   <%= link_to image_tag @product.image_url, :size => "400x400"%>
 
 </p>
@@ -20,9 +37,9 @@
 
 
 <p>
-  <b>Prix:</b>
-  <%= @product.price %>
+  <b class="showproductLabel"><%= t('product.columnPrice') %>:</b>
+  <%= number_with_precision(@product.price, :precision => 2) %>
 </p>
 
-<%= link_to 'Retour', products_path %>
+<%= link_to t('site.back'), products_path %>
 </div>

@@ -22,31 +22,43 @@ en:
     formats:
       long: ''
 
+
+
   site:
-    welcome: 'Welcome to our website'
     paragraphe1: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
     paragraphe2: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla '
-    compagny: 'Les orchidée Lussier'
-    slogan: 'A web site for anyone who is a real orchidee freak!'
+    compagny: 'StellaBijoux.com'
     contact: 'Contacts'
     about: 'About us'
     home: 'Home'
     email: 'E-mail'
-    honeylink: 'Honey Link'
+    back: 'Return'
 
-  special:
-    linklabel: 'lien vers Wikipedia'
-    item1:
-      name: 'Phrag. Acker''s Superstar'
-      description: 'Acker''s Superstar est une croissement entre 2 Phrag hybrides que chaque collectionneur a entendu parler: Jason Fischer X Erix Young.  Wunakee Sunset est un rouge foncé vif avec une excellente forme. Ceux-ci devraient être d''une Superbe couleur. '
-      link: 'xxxxx'
-    item2:
-      name: 'Paphiopedilum Yi-Ying Golden Slipper'
-      description: 'Cette complexe Paph a de très grandes dorsales vertes qui au sommet tourne au blanc . Les pétales et la pochette sont dans les teintes de jaunes et de verts, certains ont des accents plus foncé.'
-      link: 'xxxxx'
-    item3:
-      name: 'Dendrobium atroviolaceum'
-      description: 'Cette espèce de Dendrobium provient de l''ile Russel.  Cette fleur d''apparence étrange est produite en abondance.  Les pétales sont Jaunes-vertes taché de mauve. Au centre on retrouve des rayure mauve'
-      link: 'xxxxx'
-
-
+  activerecord:
+    errors:
+      template:
+          body: There were problems with the following fields
+          header:
+              one: 1 error prohibited this {{model}} from being saved
+              other: "{{count}} errors prohibited this {{model}} from being saved"
+      messages:
+          inclusion: "is not included in the list"
+          exclusion: "is reserved"
+          invalid: "is invalid"
+          confirmation: "doesn't match confirmation"
+          accepted: "must be accepted"
+          empty: "can't be empty"
+          blank: "can't be blank"
+          too_long: "is too long (maximum is {{count}} characters)"
+          too_short: "is too short (minimum is {{count}} characters)"
+          wrong_length: "is the wrong length (should be {{count}} characters)"
+          taken: "has already been taken"
+          not_a_number: "is not a number"
+          greater_than: "must be greater than {{count}}"
+          greater_than_or_equal_to: "must be greater than or equal to {{count}}"
+          equal_to: "must be equal to {{count}}"
+          less_than: "must be less than {{count}}"
+          less_than_or_equal_to: "must be less than or equal to {{count}}"
+          odd: "must be odd"
+          even: "must be even"
+          record_invalid: "this record has an error"

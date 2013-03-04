@@ -21,18 +21,20 @@ a:hover {
 
 body {
 	font-size: 12pt;
+    color: #cccccc;
 	line-height: 1.75em;
 	background: #539D8E url(/assets/bg.jpg);
 
 }
 
 #mainblueborder {
-    position: relative;
+    position: absolute;
 	top: 0px;
+    left: 0px;
     background-color:#00cccc;
     height: 10px;
     padding: 0px;
-    width: 100%;
+    width: 1210px;
 }
 
 #mainimage {
@@ -162,16 +164,44 @@ ul h4 {
 	width: 1180px;
 	padding: 15px;
 	background: #cccccc;
-	color: #333;
+
+	color: #ffffff;
 }
 
 #content a {
 	color: #ffffff;
 }
 
+.showproductLabel {
+	color: #000000;
+}
+
 #content h2, #content h3, #content h4 {
 	color: #00cccc;
 }
+
+#produitHeader {
+    color: #00cccc;
+}
+
+#produitHeader a {
+    color: #00cccc;
+}
+
+.dotcom {
+    color: #00cccc;
+}
+
+.productEven {
+    background-color: #cccccc;
+    color: #ffffff;
+}
+
+.productOdd {
+    background-color: #999999;
+    color: #333333;
+}
+
 .blogpost h2 {
 	margin: 0 0 8px 0;
 }
@@ -188,7 +218,7 @@ ul h4 {
 
 #headerpanel {
 	position: relative;
-	padding: 35px;
+	padding: 12px;
 	height: 130px;
 	width: 1180px;
     background: url(/assets/headbg.jpg);
@@ -259,13 +289,33 @@ ul h4 {
     font:"Jura","sans-serif";
 }
 
-#nav a {
+#nav ul li a {
 	text-decoration: none;
 	text-transform: lowercase;
 	font-size: 1.5em;
 	letter-spacing: -1px;
     font:"Jura","sans-serif";
     color: #ffffff;
+
+}
+
+#nav h1 a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 1.5em;
+	letter-spacing: -1px;
+    font:"Jura","sans-serif";
+    color: #ffffff;
+
+}
+
+#nav ul li a:hover {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 1.5em;
+	letter-spacing: -1px;
+    font:"Jura","sans-serif";
+    color: #00cccc;
 
 }
 

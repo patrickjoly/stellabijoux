@@ -7,9 +7,11 @@
 
   <%= form_tag :products, :method => 'get', :onchange => "this.form.submit();" do %>
       <br/>
-      <%= select_tag 'selected_category', options_from_collection_for_select(@categories, 'id', 'name', params[:selected_category]), :selected=> params[:selected_category], :include_blank => true, :onchange => "this.form.submit();" %>
-
-
+      <% if I18n.locale == I18n.default_locale %>
+            <%= select_tag 'selected_category', options_from_collection_for_select(@categories, 'id', 'name', params[:selected_category]), :selected=> params[:selected_category], :include_blank => true, :onchange => "this.form.submit();" %>
+       <% else %>
+            <%= select_tag 'selected_category', options_from_collection_for_select(@categories, 'id', 'name_e', params[:selected_category]), :selected=> params[:selected_category], :include_blank => true, :onchange => "this.form.submit();" %>
+       <% end %>
 
       <br/><br/>
       <table>
@@ -25,10 +27,16 @@
 
         <% @products.each do |product| %>
             <tr class="<%= cycle("productEven", "productOdd") %>">
-              <td><%= product.name %></td>
-              <td><%= product.description %></td>
+               <% if I18n.locale == I18n.default_locale %>
+                <td><%= product.name %></td>
+                <td><%= product.description %></td>
+               <% else %>
+                 <td><%= product.name_e %></td>
+                 <td><%= product.description_e %></td>
+              <% end %>
               <td><%= image_tag product.image_url.to_s, :size => "60x60" %></td>
-              <td><%= product.price %></td>
+              <td><%= number_with_precision(product.price, :precision => 2) %>$</td>
+
 
               <td><%= link_to (t 'product.display'), product %></td>
 

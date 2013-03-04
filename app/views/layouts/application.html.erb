@@ -7,6 +7,14 @@
   <%= stylesheet_link_tag "style" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body>
 <body>
@@ -14,7 +22,7 @@
   <div id="headerpanel">
 
     <div id="nav">
-      <h1><a href="#">StellaBijoux.com</a></h1>
+      <h1><a href="#">StellaBijoux<span class="dotcom">.com</span></a></h1>
 
       <ul>
         <li class="first active">
@@ -31,7 +39,7 @@
           <% end %>
         </li>
         <li>
-          <%= mail_to 'katiag@stellabijoux.com', t('site.email') %>
+          <%= mail_to 'info@stellabijoux.com', t('site.email') %>
 
         </li>
       </ul>
@@ -48,8 +56,8 @@
 </div>
 
 
-<div style="margin: 1em 0 3em 0; text-align: center;"><!--%@##-->Designed by
-  <a href="">my22cents.com</a>.<!--##@%--></div>
+<div style="margin: 1em 0 3em 0; text-align: center;"><!--%@##-->Designed by  <%= link_to 'my22cents.com' , 'http://www.my22cents.com' %></div>   <div class="fb-like" style="position: absolute;top: 0px;rigth:0px" data-href="http://www.stellabijoux.com" data-send="true" data-width="450" data-show-faces="true"></div>
+
 
 
 </body>
