@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_paypalbutton.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_paypalbutton.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_paypalbutton.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="55" selection-start="312" selection-end="312" vertical-scroll-proportion="0.09505703">
+            <state line="5" column="55" selection-start="312" selection-end="312" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -99,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="223" selection-end="785" vertical-scroll-proportion="-6.625">
+            <state line="41" column="120" selection-start="2283" selection-end="2283" vertical-scroll-proportion="0.7338403">
               <folding />
             </state>
           </provider>
@@ -135,9 +135,9 @@
         <option value="$PROJECT_DIR$/app/views/products/paypalbutton.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/paypallbutton_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130304221320_paypal_code_removal.rb" />
-        <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_paypalbutton.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
       </list>
     </option>
   </component>
@@ -885,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="223" selection-end="785" vertical-scroll-proportion="-6.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="70" selection-start="901" selection-end="901" vertical-scroll-proportion="-18.541666">
@@ -901,7 +894,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_paypalbutton.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="55" selection-start="312" selection-end="312" vertical-scroll-proportion="0.09505703">
+        <state line="5" column="55" selection-start="312" selection-end="312" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="120" selection-start="2283" selection-end="2283" vertical-scroll-proportion="0.7338403">
           <folding />
         </state>
       </provider>
