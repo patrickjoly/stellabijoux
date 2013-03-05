@@ -1,27 +1,27 @@
 <p id="notice"><%= notice %></p>
 <div>
 
-
+<%= render 'layouts/paypalbutton' %>
 
 <% if I18n.locale == I18n.default_locale %>
 <p>
-  <b class="showproductLabel"><%= t('product.columnName') %>:</b>
-  <%= @product.name %>
+  <b class="showproductLabel"><%= t('product.columnName') %>:
+  <%= @product.name %>  and <%= @product.id %>      </b>
 </p>
 
 <p>
-  <b class="showproductLabel"><%= t('product.columnDescription') %>:</b>
-  <%= @product.description %>
+  <b class="showproductLabel"><%= t('product.columnDescription') %>:
+  <%= @product.description %>      </b>
 </p>
 <% else %>
  <p>
-  <b class="showproductLabel"><%= t('product.columnName') %>:</b>
-  <%= @product.name_e %>
+  <b class="showproductLabel"><%= t('product.columnName') %>:
+  <%= @product.name_e %>     </b>
 </p>
 
 <p>
-  <b class="showproductLabel"><%= t('product.columnDescription') %>:</b>
-  <%= @product.description_e %>
+  <b class="showproductLabel"><%= t('product.columnDescription') %>:
+  <%= @product.description_e %> </b>
 </p>
 <% end %>
 
@@ -29,17 +29,27 @@
 
 
 <p>
-  <b class="showproductLabel"><%= t('product.columnImage') %>:</b>
-  <%= link_to image_tag @product.image_url, :size => "400x400"%>
+  <b class="showproductLabel"><%= t('product.columnImage') %>:
+  <%= link_to image_tag @product.image_url, :size => "400x400"%>   </b>
 
 </p>
 
 
 
 <p>
-  <b class="showproductLabel"><%= t('product.columnPrice') %>:</b>
-  <%= number_with_precision(@product.price, :precision => 2) %>
+  <b class="showproductLabel"><%= t('product.columnPrice') %>:
+  <%= number_with_precision(@product.price, :precision => 2) %>   </b>
 </p>
 
-<%= link_to t('site.back'), products_path %>
+<%= render 'layouts/paypalbutton' %>
+
+
+
+<% if I18n.locale == I18n.default_locale %>
+  <%= link_to image_tag("/assets/retour.png", :size => "80x35"), products_path %>
+       <% else %>
+  <%= link_to image_tag("/assets/return.png", :size => "80x35"), products_path %>
+<% end %>
+
+
 </div>
