@@ -14,6 +14,7 @@ en:
     columnCategory: 'Category'
     columnImage: 'Image'
     display: 'Show'
+    message: '*** Attention *** Please enter the size.'
 
   category:
     picklist_all: 'All categories'
