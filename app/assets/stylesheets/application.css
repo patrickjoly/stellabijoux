@@ -5,13 +5,13 @@
 	Released under the Creative Commons Attribution 3.0 License.
 */
 
-* {
+{
 	margin: 0;
 	padding: 0;
 }
 
 a {
-
+    color: white;
     font: "Jura","sans-serif";
 }
 
@@ -46,7 +46,15 @@ body {
 }
 
 
-
+#products {
+    display: table;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    margin-bottom: 0em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 body,input {
 	font-family: "Jura", sans-serif;
@@ -182,6 +190,10 @@ ul h4 {
 
 #produitHeader {
     color: #ffffff;
+}
+
+.produitHeaderRow {
+    text-align: inherit;
 }
 
 #produitHeader a {

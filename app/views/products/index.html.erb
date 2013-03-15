@@ -14,12 +14,12 @@
        <% end %>
 
       <br/><br/>
-      <table>
-        <tr id="produitHeader">
-          <th><%= sortable "name", 'product.columnName' %>  </th>
-          <th><%= sortable "description", 'product.columnDescription' %></th>
-          <th><%= t 'product.columnImage' %></th>
-          <th><%= sortable "price", 'product.columnPrice' %></th>
+      <table id="products">
+        <tr id="produitHeaderRow">
+          <th class="produitHeaderRow"><%= sortable "name", 'product.columnName' %>  </th>
+          <th class="produitHeaderRow"><%= sortable "description", 'product.columnDescription' %></th>
+          <th class="produitHeaderRow"><%= t 'product.columnImage' %></th>
+          <th class="produitHeaderRow"><%= sortable "price", 'product.columnPrice' %></th>
 
           <th></th>
           <th></th>
