@@ -15,6 +15,11 @@ fr:
     columnImage: 'Image'
     display: 'Afficher'
     message: '*** Attention *** Veuillez indiquer la grandeur.'
+  views:
+    pagination:
+      previous: "&lt; Précédent"
+      next: "Suivant &gt;"
+      last: "Dernier &gt;"
 
   category:
     picklist_all: 'Toutes les catégories'

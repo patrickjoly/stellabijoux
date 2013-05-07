@@ -15,6 +15,10 @@ en:
     columnImage: 'Image'
     display: 'Show'
     message: '*** Attention *** Please enter the size.'
+  views:
+    pagination:
+      previous: "&lt; Previous"
+      next: "Next &gt;"
 
   category:
     picklist_all: 'All categories'
