@@ -6,14 +6,7 @@
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 </head>
 <body>
 <body>
@@ -24,23 +17,45 @@
       <h1><a href="#">StellaBijoux<span class="dotcom">.com</span></a></h1>
 
       <ul>
+        <% if I18n.locale == I18n.default_locale %>
         <li class="first active">
-          <%= link_to  t('site.home'), root_url %>
+          <%= link_to  t('site.home'), root_url, :locale=>'fr' %>
         </li>
         <li>
-          <%= link_to  t('product.shorttitle'), '/products' %>
+            <%= link_to  t('product.shorttitle'), '/products' , :locale=>'fr' %>
+        </li>
+        <li>
+          <%= link_to  t('site.about'), '/abouts' , :locale=>'fr' %>
+        </li>
+         <li>
+          <%= link_to  t('site.info'), '/infos' , :locale=>'fr'%>
+        </li>
+         <% else %>
+         <li class="first active">
+          <%= link_to  t('site.home'), root_url , :locale=>'en'%>
+        </li>
+        <li>
+            <%= link_to  t('product.shorttitle'), '/products' , :locale=>'en'%>
+        </li>
+        <li>
+          <%= link_to  t('site.about'), '/abouts' , :locale=>'en'%>
+        </li>
+         <li>
+          <%= link_to  t('site.info'), '/infos' , :locale=>'en'%>
+        </li>
+         <% end %>
+        <li>
+          <%= mail_to 'info@stellabijoux.com', t('site.email') %>
         </li>
         <li>
           <% if I18n.locale == I18n.default_locale %>
-        <%= link_to "English", :locale=>'en' %>
+            <%= link_to "English", :locale=>'en' %>
           <% else %>
               <%= link_to "Français", :locale=>'fr' %>
           <% end %>
         </li>
-        <li>
-          <%= mail_to 'info@stellabijoux.com', t('site.email') %>
+      </li>
 
-        </li>
       </ul>
     </div>
   </div>
