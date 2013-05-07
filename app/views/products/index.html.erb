@@ -1,20 +1,20 @@
 <div id="produit-section-1">
-  <p id="produitDetails">
-  </p>
-
-
+  <p id="produitDetails" align="center">
   <h1 id="produitheader"><%= t 'product.title' %></h1>
 
   <%= form_tag :products, :method => 'get', :onchange => "this.form.submit();" do %>
       <br/>
       <%= paginate @products %>
+
+
       <br/><br/>
       <table id="products">
         <tr id="produitHeaderRow">
           <th class="produitHeaderRow"><%= sortable "name", 'product.columnName' %>  </th>
           <th class="produitHeaderRow"><%= sortable "description", 'product.columnDescription' %></th>
-          <th class="produitHeaderRow"><%= t 'product.columnImage' %></th>
           <th class="produitHeaderRow"><%= sortable "price", 'product.columnPrice' %></th>
+          <th class="produitHeaderRow"><%= t 'product.columnImage' %></th>
+
 
           <th></th>
           <th></th>
@@ -29,20 +29,21 @@
                  <td style="vertical-align: middle;"><%= product.name_e %></td>
                  <td style="vertical-align: middle;"><%= product.description_e %></td>
               <% end %>
-              <td style="vertical-align: middle;"><%= image_tag product.image_url.to_s, :size => "90x90" %></td>
               <td style="vertical-align: middle;"><%= number_with_precision(product.price, :precision => 2) %>$</td>
+              <td style="vertical-align: middle;"><%= image_tag product.image_url.to_s, :size => "90x90" %></td>
+
               <% if I18n.locale == I18n.default_locale %>
-<td style="vertical-align: middle;"><%= link_to image_tag("/assets/afficher.png", :size => "80x35"), :controller => 'products',
+<td style="vertical-align: middle;"><%= link_to image_tag("/assets/afficher.png", :size => "65x25"), :controller => 'products',
                                                 :action => 'show', :id => product.id , :locale=>'fr' %></td>
                <% else %>
-                    <td style="vertical-align: middle;"><%= link_to image_tag("/assets/display.png", :size => "80x35"), :controller => 'products',
+                    <td style="vertical-align: middle;"><%= link_to image_tag("/assets/display.png", :size => "65x25"), :controller => 'products',
                                                 :action => 'show', :id => product.id , :locale=>'en'  %></td>
               <% end %>
             </tr>
         <% end %>
       </table>
 
-
+      </p>
 
       <% hidden_field_tag 'locale', I18n.locale  %>
   <% end %>

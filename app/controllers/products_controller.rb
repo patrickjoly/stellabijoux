@@ -16,13 +16,13 @@ class ProductsController < ApplicationController
          logger.info 'pass by find with selected_category = ' + params[:selected_category]
          #@products = Product.find(:all, :conditions => ['category_id LIKE ?', "%#{params[:selected_category]}%"])
          productArray = Product.where("category_id = ?", @selected_category).order(sort_column + " "  + sort_direction)
-         @products = Kaminari.paginate_array(productArray).page(params[:page]).per(10)
+         @products = Kaminari.paginate_array(productArray).page(params[:page]).per(1)
 
     else
         logger.info 'pass by find without selected_category'
         #@products = Product.page(params[:page]).per(10).order(sort_column + " "  + sort_direction)
         productArray = Product.order(sort_column + " "  + sort_direction);
-        @products = Kaminari.paginate_array(productArray).page(params[:page]).per(10)
+        @products = Kaminari.paginate_array(productArray).page(params[:page]).per(1)
     end
 
     respond_to do |format|
