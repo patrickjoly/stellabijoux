@@ -34,15 +34,15 @@ body {
     background-color:#00cccc;
     height: 10px;
     padding: 0px;
-    width: 1210px;
+    width: 798px;
 }
 
 #mainimage {
-    background: url("/assets/stella.jpg") repeat scroll 0 0 transparent;
-    height: 570px;
+    background: url("/assets/final.JPG") repeat scroll 0 0 transparent;
+    height: 325px;
     padding: 0px;
     position: relative;
-    width: 1180px;
+    width: 768px;
 }
 
 
@@ -169,7 +169,7 @@ ul h4 {
 }
 
 #content {
-	width: 1180px;
+	width: 768px;
 	padding: 15px;
 	background: #cccccc;
 
@@ -186,6 +186,14 @@ ul h4 {
 
 #content h2, #content h3, #content h4 {
 	color: #00cccc;
+}
+
+div#info p  {
+	color: #000000;
+}
+
+div#about p  {
+	color: #000000;
 }
 
 #produitHeader {
@@ -231,8 +239,8 @@ ul h4 {
 #headerpanel {
 	position: relative;
 	padding: 12px;
-	height: 130px;
-	width: 1180px;
+	height: 70px;
+	width: 768px;
     background: url(/assets/headbg.jpg);
 }
 
@@ -258,7 +266,7 @@ ul h4 {
 #main {
 	position: relative;
 	padding: 0;
-	width: 1180px;
+	width: 768px;
 	margin: 25px 0 25px 0;
 }
 
@@ -286,6 +294,16 @@ ul h4 {
 	border-top: dashed 1px #1BE0C6;
 }
 
+.genparagraph  {
+	color: black;
+    font: "Jura","sans-serif";
+    font-size: 12pt;
+}
+
+#info {
+	.genparagraph;
+}
+
 #main ul li.first {
 	padding-top: 0;
 	border-top: 0;
@@ -295,16 +313,16 @@ ul h4 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 1180px;
+	width: 768px;
 	height: 57px;
-	line-height: 57px;
+	line-height: 17px;
     font:"Jura","sans-serif";
 }
 
 #nav ul li a {
 	text-decoration: none;
 	text-transform: lowercase;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	letter-spacing: -1px;
     font:"Jura","sans-serif";
     color: #ffffff;
@@ -324,7 +342,7 @@ ul h4 {
 #nav ul li a:hover {
 	text-decoration: none;
 	text-transform: lowercase;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	letter-spacing: -1px;
     font:"Jura","sans-serif";
     color: #00cccc;
@@ -339,8 +357,8 @@ ul h4 {
 
 #nav ul {
 	list-style: none;
-	width: 1180px;
-	text-align: center;
+	width: 768px;
+	text-align: left;
 }
 
 #nav ul li {
@@ -357,8 +375,8 @@ ul h4 {
 
 #outer {
 	position: relative;
-	width: 1180px;
-	margin: 80px auto 0 auto;
+	width: 768px;
+	margin: 20px auto 0 auto;
 }
 
 #search input.button {
