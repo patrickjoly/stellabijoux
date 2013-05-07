@@ -19,29 +19,29 @@
       <ul>
         <% if I18n.locale == I18n.default_locale %>
         <li class="first active">
-          <%= link_to  t('site.home'), root_url, :locale=>'fr' %>
+          <%= link_to  t('site.home'), :controller => '/homes', :locale => 'fr' %>
         </li>
         <li>
-            <%= link_to  t('product.shorttitle'), '/products' , :locale=>'fr' %>
+            <%= link_to  t('product.shorttitle'), :controller => '/products' ,  :locale => 'fr'  %>
         </li>
         <li>
-          <%= link_to  t('site.about'), '/abouts' , :locale=>'fr' %>
+          <%= link_to  t('site.about'), :controller => '/abouts' , :locale => 'fr' %>
         </li>
          <li>
-          <%= link_to  t('site.info'), '/infos' , :locale=>'fr'%>
+          <%= link_to  t('site.info'), :controller => '/infos' , :locale => 'fr'%>
         </li>
          <% else %>
          <li class="first active">
-          <%= link_to  t('site.home'), root_url , :locale=>'en'%>
+          <%= link_to  t('site.home'), :controller => '/homes' , :locale => 'en'%>
         </li>
         <li>
-            <%= link_to  t('product.shorttitle'), '/products' , :locale=>'en'%>
+            <%= link_to  t('product.shorttitle'), :controller => '/products' , :locale => 'en'%>
         </li>
         <li>
-          <%= link_to  t('site.about'), '/abouts' , :locale=>'en'%>
+          <%= link_to  t('site.about'), :controller => '/abouts' , :locale => 'en'%>
         </li>
          <li>
-          <%= link_to  t('site.info'), '/infos' , :locale=>'en'%>
+          <%= link_to  t('site.info'), :controller => '/infos' , :locale => 'en'%>
         </li>
          <% end %>
         <li>
@@ -49,9 +49,9 @@
         </li>
         <li>
           <% if I18n.locale == I18n.default_locale %>
-            <%= link_to "English", :locale=>'en' %>
+            <%= link_to "English", :locale => 'en' %>
           <% else %>
-              <%= link_to "Français", :locale=>'fr' %>
+              <%= link_to "Français", :locale => 'fr' %>
           <% end %>
         </li>
       </li>
