@@ -7,8 +7,8 @@
       <%= paginate @products %>
 
 
-      <br/><br/>
-      <table id="products">
+
+      <table id="products" cellspacing="0" cellpadding="10">
         <tr id="produitHeaderRow">
           <th class="produitHeaderRow"><%= sortable "name", 'product.columnName' %>  </th>
           <th class="produitHeaderRow"><%= sortable "description", 'product.columnDescription' %></th>
@@ -21,7 +21,9 @@
         </tr>
 
         <% @products.each do |product| %>
+
             <tr class="<%= cycle("productEven", "productOdd") %>">
+
                <% if I18n.locale == I18n.default_locale %>
                 <td style="vertical-align: middle;"><%= product.name %></td>
                 <td style="vertical-align: middle;"><%= product.description %></td>
@@ -39,7 +41,9 @@
                     <td style="vertical-align: middle;"><%= link_to image_tag("/assets/display.png", :size => "65x25"), :controller => 'products',
                                                 :action => 'show', :id => product.id , :locale=>'en'  %></td>
               <% end %>
+
             </tr>
+
         <% end %>
       </table>
 

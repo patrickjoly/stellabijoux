@@ -46,9 +46,9 @@
 
 
 <% if I18n.locale == I18n.default_locale %>
-  <%= link_to image_tag("/assets/retour.png", :size => "80x35"), products_path , :locale=>'fr' %>
+  <%= link_to image_tag("/assets/retour.png", :size => "80x35"), :controller => 'products', :action => 'index', :locale => 'fr' %>
        <% else %>
-  <%= link_to image_tag("/assets/return.png", :size => "80x35"), products_path, :locale=>'en' %>
+  <%= link_to image_tag("/assets/return.png", :size => "80x35"), :controller => 'products', :action => 'index', :locale => 'en' %>
 <% end %>
 
 

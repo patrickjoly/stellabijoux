@@ -34,7 +34,7 @@ body {
     background-color:#00cccc;
     height: 10px;
     padding: 0px;
-    width: 798px;
+    width: 830px;
 }
 
 #mainimage {
@@ -42,19 +42,12 @@ body {
     height: 325px;
     padding: 0px;
     position: relative;
-    width: 768px;
+    width: 800px;
 }
 
 
-#products {
-    display: table;
-    width: 100%;
-    padding: 0px;
-    border: 0px;
-    margin-bottom: 0em;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+
+
 
 body,input {
 	font-family: "Jura", sans-serif;
@@ -169,7 +162,7 @@ ul h4 {
 }
 
 #content {
-	width: 768px;
+	width: 800px;
 	padding: 15px;
 	background: #cccccc;
 
@@ -212,14 +205,31 @@ div#about p  {
     color: #00cccc;
 }
 
+#products {
+    width:100%;
+	height:100px;
+	background: #999999;
+	color:#fff;
+	padding:20px;
+    border: none;
+
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
 .productEven {
     background-color: #cccccc;
     color: #000000;
+
+
 }
 
 .productOdd {
     background-color: #999999;
     color: #333333;
+
+
 }
 
 .blogpost h2 {
@@ -240,7 +250,7 @@ div#about p  {
 	position: relative;
 	padding: 12px;
 	height: 70px;
-	width: 768px;
+	width: 800px;
     background: url(/assets/headbg.jpg);
 }
 
@@ -266,7 +276,7 @@ div#about p  {
 #main {
 	position: relative;
 	padding: 0;
-	width: 768px;
+	width: 800px;
 	margin: 25px 0 25px 0;
 }
 
@@ -313,7 +323,7 @@ div#about p  {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 768px;
+	width: 800px;
 	height: 57px;
 	line-height: 17px;
     font:"Jura","sans-serif";
@@ -357,7 +367,7 @@ div#about p  {
 
 #nav ul {
 	list-style: none;
-	width: 768px;
+	width: 800px;
 	text-align: left;
 }
 
@@ -375,7 +385,7 @@ div#about p  {
 
 #outer {
 	position: relative;
-	width: 768px;
+	width: 800px;
 	margin: 20px auto 0 auto;
 }
 
