@@ -219,6 +219,17 @@ div#about p  {
 	border-radius:10px;
 }
 
+#products td {
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+    border-bottom-color: #00cccc;
+    color: #333333;
+}
+
+#products tr:last-child td {
+    border-bottom: none;
+}
+
 .productEven {
     background-color: #cccccc;
     color: #000000;

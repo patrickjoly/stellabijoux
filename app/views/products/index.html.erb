@@ -8,7 +8,7 @@
 
 
 
-      <table id="products" cellspacing="0" cellpadding="10">
+      <table id="products" cellspacing="0" cellpadding="10" class="border">
         <tr id="produitHeaderRow">
           <th class="produitHeaderRow"><%= sortable "name", 'product.columnName' %>  </th>
           <th class="produitHeaderRow"><%= sortable "description", 'product.columnDescription' %></th>
@@ -22,23 +22,23 @@
 
         <% @products.each do |product| %>
 
-            <tr class="<%= cycle("productEven", "productOdd") %>">
+            <tr >
 
                <% if I18n.locale == I18n.default_locale %>
-                <td style="vertical-align: middle;"><%= product.name %></td>
-                <td style="vertical-align: middle;"><%= product.description %></td>
+                <td style="vertical-align: middle;" ><%= product.name %></td>
+                <td style="vertical-align: middle;" ><%= product.description %></td>
                <% else %>
-                 <td style="vertical-align: middle;"><%= product.name_e %></td>
-                 <td style="vertical-align: middle;"><%= product.description_e %></td>
+                 <td style="vertical-align: middle;" ><%= product.name_e %></td>
+                 <td style="vertical-align: middle;" ><%= product.description_e %></td>
               <% end %>
-              <td style="vertical-align: middle;"><%= number_with_precision(product.price, :precision => 2) %>$</td>
-              <td style="vertical-align: middle;"><%= image_tag product.image_url.to_s, :size => "90x90" %></td>
+              <td style="vertical-align: middle;" ><%= number_with_precision(product.price, :precision => 2) %>$</td>
+              <td style="vertical-align: middle;" ><%= image_tag product.image_url.to_s, :size => "90x90" %></td>
 
               <% if I18n.locale == I18n.default_locale %>
-<td style="vertical-align: middle;"><%= link_to image_tag("/assets/afficher.png", :size => "65x25"), :controller => 'products',
+<td style="vertical-align: middle;" ><%= link_to image_tag("/assets/afficher.png", :size => "65x25"), :controller => 'products',
                                                 :action => 'show', :id => product.id , :locale=>'fr' %></td>
                <% else %>
-                    <td style="vertical-align: middle;"><%= link_to image_tag("/assets/display.png", :size => "65x25"), :controller => 'products',
+                    <td style="vertical-align: middle;" ><%= link_to image_tag("/assets/display.png", :size => "65x25"), :controller => 'products',
                                                 :action => 'show', :id => product.id , :locale=>'en'  %></td>
               <% end %>
 
