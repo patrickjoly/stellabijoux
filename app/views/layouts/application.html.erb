@@ -35,6 +35,9 @@
          <li>
           <%= link_to  t('site.info'), :controller => '/infos' , :locale => 'fr'%>
         </li>
+        <li>
+          <%= link_to  t('site.friends'), :controller => '/friends' , :locale => 'fr'%>
+        </li>
          <% else %>
          <li class="first active">
           <%= link_to  t('site.home'), :controller => '/homes' , :locale => 'en'%>
@@ -47,6 +50,9 @@
         </li>
          <li>
           <%= link_to  t('site.info'), :controller => '/infos' , :locale => 'en'%>
+        </li>
+        <li>
+          <%= link_to  t('site.friends'), :controller => '/friends' , :locale => 'en'%>
         </li>
          <% end %>
         <li>

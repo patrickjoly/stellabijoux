@@ -1,4 +1,6 @@
 Stellabijoux::Application.routes.draw do
+  resources :friends
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

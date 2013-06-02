@@ -1,13 +1,12 @@
 <h1><%= t 'site.info' %></h1>
 
 <div id="info">
-<h3>titre</h3>
-<p>blablabla</p>
-<h3>titre</h3>
-<p>blablabla</p>
-<h3>titre</h3>
-<p>blablabla</p>
-<h3>titre</h3>
-<p>blablabla</p>
+<h3><%= t 'site.infotitle1' %></h3>
+<p><%= t 'site.info1' %></p>
+<% if I18n.locale == I18n.default_locale %>
+<p><%= t 'site.info1plus' %></p>
+ <% end %>
+<h3><%= t 'site.infotitle2' %></h3>
+<p><%= t 'site.info2' %></p>
 </div>
 
